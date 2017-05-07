@@ -11,13 +11,13 @@ export ARCHIVE="TGUI.zip"
 export ARCHIVE_TYPE=".zip"
 export EXTRACT_NAME="TGUI-$VERSION"
 export EXEC="
-    mv $NAME ${NAME}_tmp
-    mkdir $NAME
-    cd ${NAME}_tmp
-    mkdir build
-    cd build
-    cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_PREFIX/$NAME -DSFML_ROOT=$SFML_ROOT ..
-    make -j4 all install
-    cd ../..
+    mv $NAME ${NAME}_tmp ;
+    mkdir $NAME ;
+    cd ${NAME}_tmp ;
+    mkdir build ;
+    cd build ;
+    cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_PREFIX/$NAME -DSFML_ROOT=$SFML_ROOT .. ;
+    make -j4 all install ;
+    cd ../.. ;
     rm -rf ${NAME}_tmp"
 export TGUI_ROOT="$INSTALL_PREFIX/$NAME"

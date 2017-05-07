@@ -11,6 +11,6 @@ export ARCHIVE="catch.zip"
 export ARCHIVE_TYPE=".zip"
 export EXTRACT_NAME="Catch-$VERSION"
 export EXEC="
-    mv \"$NAME/single_include/catch.hpp\" \"/tmp/\"
-    rm -rf \"$NAME\"/*
+    mv \"$NAME/single_include/catch.hpp\" \"/tmp/\" ;
+    rm -rf \"$NAME\"/* ;
     mv \"/tmp/catch.hpp\" \"$NAME/\""
