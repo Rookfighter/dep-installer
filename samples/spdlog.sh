@@ -12,5 +12,6 @@ export ARCHIVE_TYPE=".tar.gz"
 export EXTRACT_NAME="spdlog-$VERSION"
 export EXEC="
     mv \"$NAME/include\" \"/tmp/spdlog_include\" ;
-    rm -rf \"$NAME\"/* ;
+    rm -rf \"$NAME\" ;
+    mkdir \"$NAME\" ;
     mv \"/tmp/spdlog_include\" \"$NAME/include\""

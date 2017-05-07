@@ -12,5 +12,6 @@ export ARCHIVE_TYPE=".zip"
 export EXTRACT_NAME="better-enums-$VERSION"
 export EXEC="
     mv \"$NAME/enum.h\" \"/tmp/\" ;
-    rm -rf \"$NAME\"/* ;
+    rm -rf \"$NAME\" ;
+    mkdir \"$NAME\" ;
     mv \"/tmp/enum.h\" \"$NAME/\""
